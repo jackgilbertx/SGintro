@@ -1,95 +1,75 @@
-<!DOCtype html>
+<!DOCTYPE html>
 <!--
   Name: Jack Gilbert
   Date created: 2019-01-12
-  Most Recent version: 2019-01-12
+  Most recent version: 2019-01-12
   -->
-<html lang="en">
-<head>
-  <title>Bistro 23</title>
-</head>
+  <html lang="en">
+    <head>
+      <title>Contact</title>
+      <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    </head>
 
+    <body>
+       <header>
+        <h1>Contact Me</h1>
+      </header>
+  
+        <nav>
+          <p><a href="index.html">Home</a></p>
+       </nav>
+  <hr />
+    <h2>Information Request</h2>
 
-  <body>
-  <p>Contact Us</p>
-
-  <header>
-    <h1><center>Bistro 23</center></h1>
-  </header>
-<hr />
-
-  <nav>
-      <p><a href="homepage.html">Home</a> <a href="contact.html">Contact US</a> <a href="menu.html">Menu</a></p>
-    </nav>
-<hr />
-
-<form action="submit html" method="POST">
-        <label for="Name">Name:</label> <br />
-        <input type="text" id="Name" name="Name"> <br />
-        <label for="email">Email:</label> <br />
-        <input type="text" id="Email" name="email"> <br />
+      <form action="submit html" method="POST">
+        <label for="firstName">First Name:</label> <br />
+        <input type="text" id="firstName" name="firstName"> <br />
+        <label for="lastName">Last Name:</label> <br />
+        <input type="text" id="lastName" name="lastName"> <br />
         <label for="Phone">Phone Number:</label> <br />
         <input type="text" id="Phone" name="phone"> <br />
 
-        <label for="contact">Reason for Inquiry</label>
-                <select id="contact" name="contact">
-                  <option value="default" selected>Catering</option>
-                  <option value="privateparty">Private Party</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="other">Other</option>
-                </select>
-<p>
+        <label for="contact">Best Time to Call</label> <br />
+        <select id="contact" name="contact">
+          <option value="default" selected>--Select One--</option>
+          <option value="Morning">Morning (8am to 12pm Eastern)</option>
+          <option value="afternoon">Afternoon (12pm to 5pm Eastern)</option>
+          <option value="Evening">Evening (5pm to 8pm Eastern)</option>
+        </select>
 
 
-</p>
+            <fieldset>
+                <legend>I am interested in (check all that apply)</legend><br />
+                <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
+                <label for="frontEnd">Front End Web Development</label><br />
+                <input type="checkbox" id="backEnd" name="interest" value="backEnd">
+                <label for="backEnd">Back End Web Development</label> <br />
+                <input type="checkbox" id="database" name="interest" value="database">
+                <label for="database">Database Design</label><br />
+            </fieldset>
 
-        <legend>Have you been to the restaurant</legend>
-                <input type="radio" id="choice1" name="questionnaire" value="yes">
-                <label for="choice1">Yes</label>
-                <input type="radio" id="choice2" name="questionnaire" value="No">
-                <label for="choice2">No</label>
+            <fieldset>
+              <legend>I have filled out the client questionnaire form</legend>
+              <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">Yes</label> <br />
+              <input type="radio" id="choice2" name="questionnaire" value="No">
+                <label for="choice2">No</label> <br />
+            </fieldset>
 
+          <label for="info">Additional Information</label><br />
+            <textarea id="info" name="info"></textarea><br />
 
-<p>
-
-
-
-</p>
-
-
-          <legend>Best days to contact you</legend>
-                 <input type="checkbox" id="monday" name="day" value="monday">
-                 <label for="monday">M</label>
-                 <input type="checkbox" id="tuesday" name="day" value="tuesday">
-                 <label for="tuesday">T</label>
-                 <input type="checkbox" id="wednesday" name="day" value="wednesday">
-                 <label for="wednesday">W</label>
-                 <input type="checkbox" id="thursday" name="day" value="thursday">
-                 <label for="thursday">T</label>
-                 <input type="checkbox" id="friday" name="day" value="friday">
-                 <label for="friday">F</label><br />
-                 
-
-
-              <input type="submit" name="send request" value="send request"
+          <input type="submit" name="submit" value="submit">
 
 
 
 
 
 
-<hr />
-<footer>
+       <footer>
 
-    <p><center>123 Main steet, Springfield, MN, 55409<br />
-    612-333-3333
-    </center></p>
+       </footer>
 
-</footer>
+    </body>
 
-
-
-
-
-</body>
-</html>
+  </html>

@@ -1,4 +1,5 @@
 <!DOCtype html>
+<!DOCtype html>
 <!--
   Name: Jack Gilbert
   Date created: 2019-01-12
@@ -6,9 +7,73 @@
   -->
 <html lang="en">
 <head>
-  <title>8th Street Grill</title>
+  <title>Contact US</title>
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+
+      <style>
+          label, fieldset {
+            font-weight: bold;
+            font-size: 1.1em;
+            }
+
+
+          input[type=text] {
+        margin-bottom: 10px;
+        }
+
+
+
+          }
+          fieldset {
+            margin-bottom: 10px;
+            padding: 12px 20px;
+          }
+          select {
+            margin: 10px;
+          }
+          input[type=submit] {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          font-weight: bold;
+          }
+
+          input[type=checkbox] {
+          padding: 4px 8px;
+          margin: 12px 0px;
+          }
+
+          input[type=radio] {
+            padding: 4px 8px;
+            margin: 12px 0;
+
+          }
+          legend {
+            font-weight: bold;
+
+          }
+          textarea {
+          width: 50%;
+          height: 100px;
+          padding: 10px 10px;
+          margin: 12px 0;
+          box-sizing: border-box;
+          border: 2px solid #0d1f2d;
+          border-radius: 3px;
+        }
+      </style>
+
+
+
+
+
+
+
 </head>
+
+
+
+
 
 
   <body>
@@ -17,20 +82,26 @@
   <header>
     <h1><center>8th Street Grill</center></h1>
   </header>
-<hr />
+
 
   <nav>
       <p><a href="homepage.html">Home</a> <a href="contact.html">Contact US</a> <a href="menu.html">Menu</a></p>
     </nav>
-<hr />
+    <div class="clear-float"></div>
 
-<form action="submit html" method="POST">
+
+<div>
+
+
+  <form action="submit html" method="POST">
         <label for="Name">Name:</label> <br />
         <input type="text" id="Name" name="Name"> <br />
         <label for="email">Email:</label> <br />
         <input type="text" id="Email" name="email"> <br />
         <label for="Phone">Phone Number:</label> <br />
         <input type="text" id="Phone" name="phone"> <br />
+
+
 
         <label for="contact">Reason for Inquiry</label>
                 <select id="contact" name="contact">
@@ -39,10 +110,7 @@
                   <option value="feedback">Feedback</option>
                   <option value="other">Other</option>
                 </select>
-<p>
 
-
-</p>
 
         <legend>Have you been to the restaurant</legend>
                 <input type="radio" id="choice1" name="questionnaire" value="yes">
@@ -51,11 +119,7 @@
                 <label for="choice2">No</label>
 
 
-<p>
 
-
-
-</p>
 
 
           <legend>Best days to contact you</legend>
@@ -70,16 +134,17 @@
                  <input type="checkbox" id="friday" name="day" value="friday">
                  <label for="friday">F</label><br />
 
+                 <label for="info">Additional Information</label><br />
+                   <textarea id="info" name="info"></textarea><br />
+
+              <input type="submit" name="send request" value="send request">
 
 
-              <input type="submit" name="send request" value="send request"
+        </div>
 
 
 
 
-
-
-<hr />
 <footer>
 
     <p><center>123 Main steet, Springfield, MN, 55409<br />

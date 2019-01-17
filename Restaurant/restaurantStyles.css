@@ -5,11 +5,42 @@ Most recent version:2019-01-15
 */
 
 
+.clear-float {
+  clear:both;
+}
 
+header {
+  font-family: arial black, Helvetica, sans-serif;
+}
 header, footer {
   background-color: #a3fff4;
   color: #020111;
   height: 100px;
   text-align: center;
   padding: 30px 10px 20px 10px;
+}
+
+
+nav a {
+  background-color: #a3fff4;
+  color: #003380;
+  padding: 8px;
+  border: thin solid #0d1f2d;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 25px;
+  width: 100px;
+  float: left;
+  border-radius: 4px;
+}
+nav a:hover {
+    font-weight: bold;
+}
+nav a:active {
+    text-decoration: none;
+}
+nav a:visited {
+  color: #a3fff4;
+  background-color: #003380;
 }

@@ -6,7 +6,7 @@
   -->
 <html lang="en">
 <head>
-  <title>8th Street Grill</title>
+  <title>Menu</title>
   <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
 
     <style>
@@ -17,10 +17,32 @@
            width: 30%;
            text-align: center;
           }
-
-
-        .clear-float {
+          .clear-float {
           clear:both;
+        }
+        body {
+          background-color: #e6fff2;
+        }
+        table {
+            border: 1px solid;
+            width: 50%;
+            margin: auto;
+            font-size: 1.1em
+
+
+        }
+        tr:nth-child(odd) {
+          background-color: #f4f4eb;
+        }
+        th {
+          background-color: #e6fff2;
+          text-align: left;
+        }
+        tr {
+          height: 30px;
+        }
+
+
 
     </style>
 
@@ -36,17 +58,19 @@
   <header>
     <h1><center>8th Street Grill</center></h1>
   </header>
-<hr />
+
 
   <nav>
       <p><a href="homepage.html">Home</a> <a href="contact.html">Contact US</a> <a href="menu.html">Menu</a></p>
     </nav>
-<hr />
+    <div class="clear-float"></div>
+
 <br />
 
 <section>
+
 <p><strong>Burger and Fries</strong><br />
-  An american Classic!<br />
+An american Classic!<br />
 Your choice - with or without cheese<br />
 Pickle, onion, tomatoe, and lettuce<br />
 Served with our famous thick cut<br />
@@ -103,13 +127,37 @@ $7.95
 
 </section>
 
-
+<table>
+  <thead>
+    <tr>
+      <th>Beverages</th>
+      <th></th>
+    </tr>
+  </thead>
+    <tr>
+        <td>Root beer</td>
+        <td>$1.25</td>
+      </tr>
+      <tr>
+        <td>Bottled Water</td>
+        <td>$1.25</td>
+      </tr>
+      <tr>
+        <td>Lemonade</td>
+        <td>$1.00</td>
+      </tr>
+      <tr>
+        <td>Iced Tea</td>
+        <td>$1.25</td>
+      </tr>
+</table>
+<br />
 
 
 
 
 <footer>
-<hr />
+
     <p><center>123 Main steet, Springfield, MN, 55409<br />
     612-333-3333
     </center></p>

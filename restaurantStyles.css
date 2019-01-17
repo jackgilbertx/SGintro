@@ -1,0 +1,15 @@
+/*
+Creator: Jack Gilbert
+Date created: 2019-01-13
+Most recent version:2019-01-15
+*/
+
+
+
+header, footer {
+  background-color: #a3fff4;
+  color: #020111;
+  height: 100px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+}

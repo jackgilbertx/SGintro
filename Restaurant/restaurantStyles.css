@@ -3,14 +3,21 @@ Creator: Jack Gilbert
 Date created: 2019-01-13
 Most recent version:2019-01-15
 */
+.jumbotron {
+min-height: 200px;
+background-color: #4cffdb !important;
+}
 
-
+h2 {
+  font-style: italic;
+}
 .clear-float {
   clear:both;
 }
 
 header {
-  font-family: arial black, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
 header, footer {
   background-color: #a3fff4;
@@ -19,6 +26,11 @@ header, footer {
   text-align: center;
   padding: 30px 10px 20px 10px;
 }
+
+.homeBtn {
+  font-size: 1.2em;
+}
+
 
 
 nav a {

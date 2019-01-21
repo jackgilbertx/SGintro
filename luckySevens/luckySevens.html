@@ -1,0 +1,56 @@
+<!DOCtype html>
+<!--
+  Name:
+  Date created:2019-01-20
+  Most recent Version:2019-01-20
+  -->
+  <html lang="en">
+
+   <head>
+     <title>Lucky Sevens</title>
+    <script type="text/javascript" src="luckySevens.js"></script>
+    <link href="luckySevens.css" rel="stylesheet" type="text/css" />
+   </head>
+
+
+   <body>
+
+
+     <header>
+       <h1>Lucky Sevens</h1>
+     </header>
+
+     <label for="startingBet">Starting Bet:</label>
+     <input type="number" id="betInput" name="startingBet" value="0.00">
+     <br />
+     <button onclick="play()">Play</button>
+
+
+<hr />
+
+  <div id="results" style="display: none;">
+    <table><center>
+          <caption>Results</caption>
+        <tr>
+            <td>Starting Bet</td>
+            <td><span id="money"></span></td>
+        </tr>
+        <tr>
+            <td>total rolls before going broke</td>
+            <td><span id="rollsBeforeBroke"></span></td>
+        </tr>
+        <tr>
+            <td>Highest amount won</td>
+            <td><span id="maxWinnings"></span></td>
+        </tr>
+        <tr>
+            <td>Roll Count at Highest Amount Won</td>
+            <td><span id="rollsAtMax"></span></td>
+        </tr>
+        </center>
+      </table>
+   </div>
+
+  </body>
+
+  </html>

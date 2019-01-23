@@ -4,7 +4,7 @@ Date created: 2019-01-13
 Most recent version:2019-01-15
 */
 .jumbotron {
-min-height: 200px;
+min-height: 170px;
 background-color: #4cffdb !important;
 }
 
@@ -16,7 +16,7 @@ h2 {
 }
 
 header {
-  font-family: Helvetica, sans-serif;
+  font-family: brush script m7, Helvetica, sans-serif;
   font-weight: bold;
 }
 header, footer {
@@ -27,9 +27,7 @@ header, footer {
   padding: 30px 10px 20px 10px;
 }
 
-.homeBtn {
-  font-size: 1.2em;
-}
+
 
 
 

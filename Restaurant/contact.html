@@ -117,11 +117,11 @@
 <div class="form-group col-md-6"
   <form action="submit html" method="POST">
         <label for="Name">Name:</label> <br />
-        <input type="text" id="Name" name="Name" required> <br />
+        <input type="text" id="Name" name="Name"> <br />
         <label for="email">Email:</label> <br />
-        <input type="text" id="Email" name="email" required> <br />
+        <input type="text" id="Email" name="email"> <br />
         <label for="Phone">Phone Number:</label> <br />
-        <input type="text" id="Phone" name="phone" required> <br />
+        <input type="text" id="Phone" name="phone"> <br />
 </div>
 <div class="form-group col-md-6">
         <label for="contact">Reason for Inquiry</label>
@@ -135,7 +135,7 @@
 </div>
       <div class="custom-control custom-radio">
         <legend>Have you been to the restaurant</legend>
-                <input type="radio" id="choice1" name="questionnaire" value="yes" required>
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
                 <label for="choice1">Yes</label>
                 <input type="radio" id="choice2" name="questionnaire" value="No">
                 <label for="choice2">No</label>
@@ -181,13 +181,18 @@ function validateForm() {
 var validateName = document.getElementById("Name").value;
 var validateEmail = document.getElementById("Email").value;
 var validatePhone = document.getElementById("Phone").value;
+var choice1 = document.getElementById("choice1").checked;
+var choice2 = document.getElementById("choice2").checked;
+var daysToContact = document.querySelectorAll('input[type="checkbox"]:checked').length;
 
-if (validateName !== "" && validateEmail !== "" && validatePhone !== "")
+if (daysToContact >= 1 && validateName !== "" && validateEmail !== "" && validatePhone !== "" && (choice1 == true || choice2 == true) )
  {
   alert("Submitted Successfully");
 }
+else{
+  alert("Please fill out all fields of the contact form")
 }
-
+}
 
 </script>
 

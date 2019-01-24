@@ -5,10 +5,10 @@ function play() {
   var money = startingBet;
   var dice1;
   var dice2;
-  var diceRoll;
+  var rollsAtMax = 0;
   var rollsBeforeBroke = 0;
   var maxWinnings = 0;
-  var rollsAtMax = 0;
+
 
 
   if(money <= 0){
@@ -20,25 +20,24 @@ function play() {
        rollsBeforeBroke++;
        dice1 = Math.floor(Math.random() * 6) + 1;
        dice2 = Math.floor(Math.random() * 6) + 1;
-       diceRoll = dice1 + dice2;
 
-     if(diceRoll != 7) {
-       money --;
-    } else{
-      money += 4;
+    if(dice1 + dice2 != 7) {
+       money = money - 1;
+   }else {
+       money = money + 4;
 
-      if(money > maxWinnings) {
+    if(money > maxWinnings) {
         maxWinnings = maxWinnings + money;
-        rollsBeforeBroke = rollsAtMax;
+        rollsAtMax = rollsBeforeBroke;
       }
     }
 
    }
  document.getElementById("results").style.display = "block";
- document.getElementById("money").innerText = startingBet;
+ document.getElementById("money").innerText = '$ ' + startingBet;
  document.getElementById("rollsBeforeBroke").innerText = rollsBeforeBroke;
- document.getElementById("maxWinnings").innerText = maxWinnings;
+ document.getElementById("maxWinnings").innerText = '$ ' + maxWinnings;
  document.getElementById("rollsAtMax").innerText = rollsAtMax;
- return false;
 }
+return false;
 }
